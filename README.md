@@ -1,11 +1,28 @@
-# QR Scan
+# Personal site
 
-Visit [here](https://imjustlooking.github.io/qrscan/).
-As its name implies, this is a QR code scanner, ideally used with a mobile phone. It reads camera input, then outputs the scan content into a field where users can either copy to clipboard, or visit (if they believe it is a trusted & valid url).
+Visit [site](http://www.gabrielu.xyz).
+This is where I store the code for my personal site for now.
 
-Background
+Initially I had hosted it using herokuapp with a node.js framework, thinking to add routing. However, herokuapp limits your app active time and only wakes it up when the url is visited in a 30 minute window. Read more about heroku's policies for free hosting [here](https://www.heroku.com/free).
+
+As of Dec 29, "When it idles (automatically, after 30 minutes of inactivity), or when you scale it down, your app will stop consuming dyno hours." What this means, is that after at least 30 minutes, your site becomes inactive, and requires a long initial load time, in my experience. That's not something your visitors would like; Github pages are pretty fast on the other hand.
+
+I used [namecheap.com](http://www.namecheap.com) to purchase the domain, and that is also where I made adjustments to the advanced DNS settings.
+
+If you are keen to find out how to use a custom domain for your github page hosting, I have added some pictures below to show you my current configuration.
+
+* Disclaimer: There may be more updated resources out there documenting how to host between your domain site and github. It's best to do your own homework and follow those instead :)
+
+Github settings
 ======
-I tinkered with the [Instascan API](https://github.com/schmich/instascan) for a previous project, HawkerPay, in order to implement a QR code reader. While the project had too narrow a deadline to include this snippet, I decided to revisit this to make something useful. While usually in the form of apps, QR scanners often come bundled with annoying ads. So one upside is that you don't need to bother with those :), but you'd need internet access to visit the site first!
+
+This part's easy.
+Navigate to your github repository >> Settings >> Scroll down to Github Pages >> adjust custom domain to 'yourdomainname.com'.
+
+I also assume you have already hosted the project on github pages. If you have not, adjust source to master branch >> Save.
+
+![Github pages settings](/pics/github_settings.png "Github pages settings")
+
 
 Made with
 ======
