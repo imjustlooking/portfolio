@@ -1,4 +1,6 @@
-# Personal site
+# Personal site (old)
+
+* old site [here](https://imjustlooking.github.io/portfolio/)
 
 Visit [site](http://www.gabrielu.xyz).
 This is where I store the code for my personal site for now.
